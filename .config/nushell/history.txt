@@ -1,0 +1,133 @@
+clear
+ls
+la
+ls
+cd Documents/
+ls
+exit
+clear
+cd
+clear
+docker network ls
+docker ps
+cd .config/starship/
+ls
+clear
+starship
+clear
+ls
+cd .config/starship/
+clear
+l
+cd
+cd Documents/repos/
+ls
+cd Startpage/
+clear
+cd
+clear
+cd Startpage/
+cd Documents/repos/
+cd Startpage/
+ls
+cd 
+cd .config/starship/
+zed starship.toml
+cd
+clear
+ls
+cd .config/starship/
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+cd 
+clear
+cd Documents/Code/repos/
+ls
+cd Startpage/
+ls
+clear
+cd
+clear
+hgc\
+clear
+ls
+l
+ls
+cd Startpage/
+cd Documents/Code/repos/
+clear
+Error: nu::shell::external_command
+clear
+ls
+cd Documents/Code/repos/
+ls
+clear
+cd Documents/Code/repos/
+ls
+clear
+cd Documents/Code/repos/
+clear
+ls
+clear
+zed
+nvim
+clear
+cd Documents/Code/repos/
+cd
+cd Documents
+pwd
+clear
+cd Documents
+pwd
+cd
+cd Documents
+clear
+cd Documents/Code/repos/
+cd Documents/Code
+cd
+clear
+ls
+clear
+cd Documents/Code
+pwd
+clear
+exit
+nu
+exit
+nu
+exit
+nu
+exit
+nu
+exit
+nu
+exit
+nu
+clear
+ls
+lsblk
+lsblk | select NAME, SIZE
+lsblk | select NAME, SIZE | each { $_.SIZE | math format-by { $_ / 1024 / 1024 } }<\n>
+lsblk | select NAME, SIZE | each { $it.SIZE / 1024 / 1024 }<\n>
+clear
+lsblk | sort-by SIZE
+lsblk | select NAME, SIZE
+lsblk | select NAME, SIZE<\n>
+lsblk | select NAME, SIZE | each { $it.SIZE / 1024 / 1024 }
+lsblk | where SIZE > 50GB | sort-by SIZE
+lsblk | select NAME, SIZE | each { $it.SIZE = $it.SIZE / 1024 / 1024 | math round 2; $it } | sort-by SIZE
+lsblk | select NAME, SIZE | each { $it.SIZE = ($it.SIZE / 1024 / 1024) | math round 2; $it } | sort-by SIZE<\n>
+lsblk | select NAME, SIZE | each { <\n>    $it.SIZE = ($it.SIZE / 1024 / 1024); <\n>    $it.SIZE = math round $it.SIZE 2; <\n>    $it <\n>} | sort-by SIZE<\n>
+clear
+ls | table
+ls
+ls | where type == "File" && name.ends_with(".txt")
+ls | where type == "File" and name.ends_with(".txt")<\n>
+ls | where type == "File"; where name.ends_with(".txt")<\n>
+clear
+exit
